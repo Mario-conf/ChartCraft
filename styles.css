@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f2f2f2;
+    color: #ffffff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #6b6b6b;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #002d5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #001830;
+    transition: 0.3s;
+}
+
+button.dark-mode-toggle {
+    background-color: #333;
+    color: white;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="file"] {
+    display: none;
+}
+
+label.upload-button {
+    background-color: #002d5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; 
+}
+
+label.upload-button:hover {
+    background-color: #001830;
+    transition: 0.3s;
+}
+input[type="file"] {
+    display: none;
+}
+
+body.dark-mode {
+    background-color: #1b1b1b;
+    color: aliceblue;
+}
+
+form.dark-mode {
+    background-color: #000000;
+    color: aliceblue;
+}
+
+label.dark-mode {
+    color: aliceblue;
+}
