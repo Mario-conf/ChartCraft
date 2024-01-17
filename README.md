@@ -1,8 +1,8 @@
-## JS Charts App Lite
+## ChartCraft
 
 ---
 
-![JS Charts App](https://img.freepik.com/fotos-premium/grafico-mercado-valores-que-brilla-intensamente-estilo-abstracto-sobre-fondo-claro-grafico-estadisticas-comerciales-fondo-pantalla-futurista-grafico-mercado-beneficio-dinero-inversion-financiera-mercado-valores_155807-9022.jpg)
+![ChartCraft](https://img.freepik.com/fotos-premium/grafico-mercado-valores-que-brilla-intensamente-estilo-abstracto-sobre-fondo-claro-grafico-estadisticas-comerciales-fondo-pantalla-futurista-grafico-mercado-beneficio-dinero-inversion-financiera-mercado-valores_155807-9022.jpg)
 
 ### Description
 
@@ -61,11 +61,11 @@ Your contributions are welcome! Follow me on my social media to support this pro
 
 ---
 
-## App de Gráficos en JS Lite
+## ChartCraft
 
 ---
 
-![JS Charts App](https://img.freepik.com/fotos-premium/grafico-mercado-valores-que-brilla-intensamente-estilo-abstracto-sobre-fondo-claro-grafico-estadisticas-comerciales-fondo-pantalla-futurista-grafico-mercado-beneficio-dinero-inversion-financiera-mercado-valores_155807-9022.jpg)
+![ChartCraft](https://img.freepik.com/fotos-premium/grafico-mercado-valores-que-brilla-intensamente-estilo-abstracto-sobre-fondo-claro-grafico-estadisticas-comerciales-fondo-pantalla-futurista-grafico-mercado-beneficio-dinero-inversion-financiera-mercado-valores_155807-9022.jpg)
 
 ### Descripción
 
