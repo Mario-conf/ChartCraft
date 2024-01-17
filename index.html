@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Gráficos y Estadísticas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.forms[0].classList.toggle('dark-mode');
+            document.querySelectorAll('label').forEach(label => label.classList.toggle('dark-mode'));
+      const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('dark-mode', isDarkMode);
+        }
+     const savedDarkMode = localStorage.getItem('dark-mode');
+        if (savedDarkMode === 'true') {
+            toggleDarkMode();
+        }
+    </script>
+</head>
+<body>
+<form id="dataForm">
+    <label for="categories">Categorías:</label>
+    <input type="text" id="categories" placeholder="Separadas por comas (ej. Cat1, Cat2, Cat3)">
+    <br>
+    <label for="values">Valores:</label>
+    <input type="text" id="values" placeholder="Separados por comas (ej. 12, 19, 3, 5, 2)">
+<br>
+    <label for="chartType">Tipo de Gráfico:</label>
+    <select id="chartType">
+        <option value="bar">Gráfico de Barras</option>
+        <option value="area">Gráfico de Área</option>
+        <option value="line">Gráfico de Línea</option>
+        <option value="radar">Gráfico Radar</option>
+        <option value="pie">Gráfico Circular</option>
+         
+    </select>
+<br>
+    <button type="button" onclick="updateChart()">Actualizar Gráfico</button>
+ <br>   <button type="button" onclick="exportAsImage()">Exportar como Imagen</button><br>
+ <label for="csvInput" class="upload-button" onclick="chooseFile()">Seleccionar Archivo CSV</label>
+ <input type="file" id="csvInput" accept=".csv" onchange="loadCSV()" style="display: none;">
+
+<button type="button" class="dark-mode-toggle" onclick="toggleDarkMode()">Cambiar Modo Oscuro</button>
+</form><br>
+<canvas id="myChart"></canvas>
+<script src="app.js"></script>
+</body>
+</html>
