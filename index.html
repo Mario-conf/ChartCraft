@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Gráficos y Estadísticas</title>
+    <title>ChartCraft</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -50,5 +50,41 @@
 </form><br>
 <canvas id="myChart"></canvas>
 <script src="app.js"></script>
+    <footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var year = new Date().getFullYear();
+      var copyrightParagraph = document.getElementById('copyright');
+      copyrightParagraph.innerHTML = '© ' + year + 'ChartCraft. Todos los derechos reservados.';
+    });
+  </script>
+  <style>
+      footer a {
+        color: #dddddd;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+footer a:hover{
+  color: #ffffff;
+}
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    color: #dddddd;
+    background-color: #333;
+    width: 100%;
+    height: 150px;
+}
+
+  </style>
+  <br>
+  <p>Developed by</p><a href="https://github.com/Mario-conf" target="_blank">Mario.conf</a>
+  <br>
+  <p id="copyright">
+ 
+</footer>
 </body>
 </html>
